@@ -10,7 +10,7 @@ TOKEN = "8729822305:AAGdrnB6ayAADhPWUOR-WOayfMeaySbfLrY"
 CANAL_UNICO = "-1003833165052"  # ⬅️ PON AQUÍ EL ID DE TU CANAL ÚNICO
 
 bot = Bot(token=TOKEN)
-ARCHIVO_DATOS = "estadisticas_permanentes.json"
+ARCHIVO_DATOS = "data/estadisticas_permanentes.json"
 
 # --- SISTEMA DE PERSISTENCIA (MEMORIA) ---
 def cargar_historial():
