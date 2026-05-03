@@ -5,9 +5,11 @@ import json
 import time
 from telegram import Bot, InlineKeyboardMarkup, InlineKeyboardButton
 
+from telegram.ext import ApplicationBuilder
+
 # --- CONFIGURACIÓN TELEGRAM ---
-TOKEN = "8729822305:AAGdrnB6ayAADhPWUOR-WOayfMeaySbfLrY"
-CANAL_UNICO = "-1003833165052"  # ⬅️ PON AQUÍ EL ID DE TU CANAL ÚNICO
+TOKEN = os.getenv('TELEGRAM_TOKEN')
+CANAL_UNICO = os.getenv('CANAL_ID') # ⬅️ PON AQUÍ EL ID DE TU CANAL ÚNICO
 
 bot = Bot(token=TOKEN)
 ARCHIVO_DATOS = "data/estadisticas_permanentes.json"
